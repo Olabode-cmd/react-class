@@ -1,0 +1,31 @@
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px auto;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: ecnter;
+}
+
+.nav-bg {
+  background: #bbb;
+  width: 100%;
+}
+
+.nav .links {
+  display: flex;
+  margin: 5px 0;
+}
+
+.nav .links a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.w-50 {
+  width: 50px
+}
