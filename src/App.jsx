@@ -1,7 +1,6 @@
 import Navbar from './components/navbar/navbar'
 
 function App() {
-
   function handleClick (){
     alert("Button Clicked")
   };
@@ -17,12 +16,10 @@ function App() {
       alert("You are a minor");
     } 
   }
-
   let userLoggedIn = true
-
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* Event Handlers */}
       <div className="container">
