@@ -5,7 +5,6 @@ const FetchDataExample = () => {
   const [loading, setLoading] = useState(true); // Track loading state
   const [error, setError] = useState(null); // Track errors
 
-  const name = "Michael";
   useEffect(() => {
     // Fetch data inside the effect
     const fetchData = async () => {
@@ -15,10 +14,9 @@ const FetchDataExample = () => {
         );
         if (!response.ok) throw new Error("Network response was not ok");
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         setPosts(data);
       } catch (error) {
-        // console.log(`Error: ${error}`)
         setError(error.message); // Handle errors
       } finally {
         setLoading(false); // Turn off loading state
@@ -27,10 +25,8 @@ const FetchDataExample = () => {
 
     fetchData();
   }, []);
-
   //   const six = posts.slice(0,6)
-
-  // https://github.com/Olabode-cmd/react-class
+  // yarn create-vite@latest
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
